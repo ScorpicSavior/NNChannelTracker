@@ -9,7 +9,7 @@ but can be used standalone without problems.
 The current version has no means to turn the logger off. Remove the Addon if you
 don't want to log any more data.
 
-# Installing
+## Installing
 
 Go to the [releases](https://github.com/ScorpicSavior/NNChannelTracker/releases)
 page on GitHub and download the zip bundle. Extract it directly into your ToS
@@ -21,7 +21,7 @@ the Addon.
 
 There are no known issues/incompatibilities with other Addons.
 
-# Building From Source
+## Building From Source
 
 In order to build the Addon from source (rather than using the release version
 as stated above), you need to place the following files into the `tools` folder
@@ -34,7 +34,7 @@ After that, you can run the `build.cmd` shell script to get the .ipf file ready
 to be placed into the `data` folder of your game. You also have to create an
 empty folder `addons\nnchannel` so the Addon can create the logfile there.
 
-# License
+## License
 
 This program is free software: you can redistribute it and/or modify
 it under the terms of the GNU General Public License as published by
@@ -49,6 +49,6 @@ GNU General Public License for more details.
 You should have received a copy of the GNU General Public License
 along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
-# Additional Disclaimer
+## Additional Disclaimer
 
 This project is not affiliated with Tree of Savior / IMCGAMES CO., LTD. in any way.
