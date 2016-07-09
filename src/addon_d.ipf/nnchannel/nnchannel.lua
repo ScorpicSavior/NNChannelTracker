@@ -20,7 +20,7 @@ if not _G["NNCHANNEL"] then
   _G["NNCHANNEL"] = {};
 end
 
-local Version = "v0.1.0";
+local Version = "v0.1.1";
 
 function NNCHANNEL_ON_TIME_UPDATE(frame, msg, argStr, argNum)
   if _G["NNCHANNEL"]["lastTime"] == argNum then return end
@@ -70,13 +70,11 @@ end
 
 local isLoaded = false;
 function NNCHANNEL_ON_INIT(addon, frame)
-	if isLoaded then
-		return nil;
-	end
-	isLoaded = true;
-
   addon:RegisterMsg("REAL_TIME_UPDATE", "NNCHANNEL_ON_TIME_UPDATE");
   addon:RegisterMsg("ZONE_TRAFFICS", "NNCHANNEL_ON_ZONE_TRAFFICS");
 
-	ui.SysMsg(string.format("Nin-Nin Channel Tracker %s loaded!", Version));
+  if isLoaded then
+    ui.SysMsg(string.format("Nin-Nin Channel Tracker %s ready!", Version));
+  end
+  isLoaded = true;
 end
