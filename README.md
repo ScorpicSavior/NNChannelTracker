@@ -17,7 +17,13 @@ folder; for most people, it's located at `C:\Program Files (x86)\Steam\SteamApps
 
 There should be a file named `📜nnchannel.ipf` in the `data` folder of ToS
 after extracting. The emoticon must be there, so the ToS updater won't delete
-the Addon.
+the Addon. Depending on your version of Windows, the emoticon might be shown as
+a single white square; this is okay.
+
+Also there should be an empty folder "nnchannel" within the "addons" folder of
+the game after you've extracted the zip. This is on purpose, since Addons can't
+create empty folders on their own. This folder will later hold a file called
+`population_log.csv` which represents the channel populations logfile.
 
 There are no known issues/incompatibilities with other Addons.
 
