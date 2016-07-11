@@ -36,7 +36,9 @@ after cloning the repository:
 * `ies.py` and `ipf.py` from [treeofsavior-tools](https://github.com/TwoLaid/treeofsavior-tools)
 * `ipf_unpack.exe` and `zlib1.dll` from [IPFUnpacker](https://github.com/r1emu/IPFUnpacker)
 
-After that, you can run the `build.cmd` shell script to get the .ipf file ready
+You will also need to install Python 2.7, I recommend [Active Python](http://www.activestate.com/activepython/downloads).
+
+After that, you can run the `build.py` script to get the .ipf file ready
 to be placed into the `data` folder of your game. You also have to create an
 empty folder `addons\nnchannel` so the Addon can create the logfile there.
 
