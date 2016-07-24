@@ -12,8 +12,9 @@ don't want to log any more data.
 ## Installing
 
 Go to the [releases](https://github.com/ScorpicSavior/NNChannelTracker/releases)
-page on GitHub and download the zip bundle. Extract it directly into your ToS
-folder; for most people, it's located at `C:\Program Files (x86)\Steam\SteamApps\common\TreeOfSavior`
+page on GitHub and download the zip bundle (not the source code). Extract it
+directly into your ToS folder; for most people, it's located at
+`C:\Program Files (x86)\Steam\SteamApps\common\TreeOfSavior`
 
 There should be a file named `📜nnchannel.ipf` in the `data` folder of ToS
 after extracting. The emoticon must be there, so the ToS updater won't delete
@@ -24,6 +25,9 @@ Also there should be an empty folder "nnchannel" within the "addons" folder of
 the game after you've extracted the zip. This is on purpose, since Addons can't
 create empty folders on their own. This folder will later hold a file called
 `population_log.csv` which represents the channel populations logfile.
+
+After you followed these steps, you can (re-)start the game. It should then
+write data to its logfile on every even minute.
 
 There are no known issues/incompatibilities with other Addons.
 
